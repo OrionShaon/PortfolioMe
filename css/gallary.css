@@ -1,0 +1,162 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	text-decoration: none;
+}
+#gl{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0;
+	width: 600px;
+	height: 150px;
+	z-index: 0;
+}
+#gs{
+	list-style: none;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background:#000;
+	transform: rotate(45deg);
+	transition: .5s;
+	margin: -100px;
+	overflow: hidden;
+	opacity: .5;
+}
+#gs:hover{
+	opacity: 1;
+}
+#gs.item1{
+	top: 0;
+	left: 0;
+}
+#gs.item2{
+	bottom: 0;
+	left: 25%;
+}
+#gs.item3{
+	top: 0;
+	left: 50%;
+}
+#gs.item4{
+	bottom: 0;
+	left: 75%;
+}
+#gs.item5{
+	top: 0;
+	left: 100%;
+}
+#gs .bg{
+	height: 100%;
+	width: 100%;
+	transform: rotate(-45deg) scale(1.42);
+}
+#gs.item1 .bg{
+	background: url(../img/bg3.jpg);
+	background-size: cover;
+}
+#gs.item2 .bg{
+	background: url(../img/bg4.jpg);
+	background-size: cover;
+}
+#gs.item3 .bg{
+	background: url(../img/bg2.jpg);
+	background-size: cover;
+}
+#gs.item4 .bg{
+	background: url(../img/bg5.jpg);
+	background-size: cover;
+}
+#gs.item5 .bg{
+	background: url(../img/bg6.jpg);
+	background-size: cover;
+}
+header{
+	background: #00825c;
+	height: 80px;
+	width: 100%;
+}
+.novoair .ulit{
+	float: right;
+	margin: 0px;
+}
+.novoair .ulit .litm{
+	display: inline-block;
+	line-height: 80px;
+	margin-bottom:  20px;
+}
+.novoair .ulit .litm .anc{
+	color: white;
+	font-size: 17px;
+	text-transform: uppercase;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-decoration: none;
+	margin: 5px;
+
+}
+#active{
+	background: #1b9bff;
+}
+.anc:hover{
+	background: #1b9bff;
+	transition: 0.5s;
+}
+.checktton{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+@media (max-width: 952px){
+	.novoair .ulit .litm .anc{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checktton{
+		display: block;
+	}
+	.novoair{
+	background: #00825c;
+	height: 80px;
+	width: 100%;
+	}
+	.ulit{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2c3e50;
+		top: 64px;
+		left: -120%;
+		text-align: center;
+		transition: all .5s;
+		z-index: 1;
+	}
+	.novoair .ulit .litm {
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	.novoair .ulit .litm .anc{
+		font-size: 20px;
+	}
+	.anc:hover,{
+		background: none;
+		color: #0082e6;
+	}
+	#check:checked ~ .ulit{
+		left: 0;
+	}
+	
+}
