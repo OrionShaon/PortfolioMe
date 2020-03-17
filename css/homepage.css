@@ -32,6 +32,7 @@ html, body{
 	bottom: 0;
 	color: black;
 	text-transform: uppercase;
+	font-family: arial;
 }
 .home h1{
 	font-size: 40px;
