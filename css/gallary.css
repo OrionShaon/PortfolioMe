@@ -151,7 +151,7 @@ header{
 	.novoair .ulit .litm .anc{
 		font-size: 20px;
 	}
-	.anc:hover,{
+	.anc:hover{
 		background: none;
 		color: #0082e6;
 	}
